@@ -27,9 +27,9 @@ class GraphConvolution(nn.Module):
             return output
 
 
-class LC_GCN(nn.Module):
+class MWGCN(nn.Module):
     def __init__(self, embedding_matrix, opt):
-        super(LC_GCN, self).__init__()
+        super(MWGCN, self).__init__()
         self.opt = opt
         self.embed = nn.Embedding.from_pretrained(torch.tensor(embedding_matrix, dtype=torch.float))
         self.text_lstm = DynamicLSTM(opt.embed_dim, opt.hidden_dim, num_layers=1, batch_first=True, bidirectional=False)
