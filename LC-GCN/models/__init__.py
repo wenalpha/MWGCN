@@ -6,3 +6,4 @@ from models.lcgcn3 import LC_GCN
 # from models.InterGCN import INTERGCN_BERT
 from models.intergcn_bert import INTERGCN_BERT
 # from models.lcgcn5 import LC_GCN#以相似度赋圈
+from models.mwgcn import MWGCN
